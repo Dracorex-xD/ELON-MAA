@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "ELON MAA",
+    "description": "Spamming ELON MAA.",
+    "version": "0.0.1",
+    "permissions": [
+        "tabs",
+        "background",
+        "clipboardRead",
+        "scripting"
+    ],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "content_scripts": [
+        {
+        "matches": ["<all_urls>"],
+        "js": ["./contentScripts/content.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "./dist/index.html",
+        "default_title": "ELON MAA"
+    
+        }
+}
